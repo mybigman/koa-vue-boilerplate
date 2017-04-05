@@ -3,8 +3,20 @@
   "version": "0.0.1",
   "description": "A simple boilerplate for Koa2, Vue2 and Vuex - orchestrated by Webpack.",
   "dependencies": {
-    "vue": "^2.2.6"
+    "koa": "^2.2.0",
+    "vue": "^2.2.6",
+    "vuex": "^2.2.1"
   },
   "devDependencies": {},
-  "author": "Attaphong Rattanaveerachanon <ohm.attaphong@gmail.com>"
+  "author": "Attaphong Rattanaveerachanon <ohm.attaphong@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/detohm/koa-vue-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/detohm/koa-vue-boilerplate/issues"
+  },
+  "engines": {
+    "node": "7.6.0"
+  }
 }
