@@ -5,7 +5,12 @@
   "author": "Attaphong Rattanaveerachanon <ohm.attaphong@gmail.com>",
   "main": "src/server/app.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon src/server/app.js --watch src/server"
+    "dev": "cross-env NODE_ENV=development nodemon src/server/app.js --watch src/server",
+    "dev-client": "cross-env NODE_ENV=development",
+    "build": "npm run build-client && npm run build-server",
+    "build-client": "cross-env NODE_ENV=production webpack --config ./webpack.prod.client.js",
+    "build-server": "cross-env NODE_ENV=production webpack --config ./webpack.prod.server.js",
+    "start": "cross-env NODE_ENV=production node ./dist/app.js"
   },
   "dependencies": {
     "koa": "^2.2.0",
@@ -13,9 +18,17 @@
     "vuex": "^2.2.1"
   },
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-latest": "^6.24.1",
     "cross-env": "^4.0.0",
+    "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
     "nodemon": "^1.11.0",
-    "webpack": "^2.3.3"
+    "vue-loader": "^11.3.4",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
   },
   "repository": {
     "type": "git",

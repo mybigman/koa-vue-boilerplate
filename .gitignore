@@ -9,3 +9,7 @@ node_modules
 # Project code
 .DS_Store
 .vscode
+
+# Dist folder
+dist/*.js
+dist/*.js.map
