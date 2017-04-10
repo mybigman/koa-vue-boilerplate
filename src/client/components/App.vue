@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-
+    RENDER FROM VUE : {{msg}}
   </div>
 </template>
 
@@ -9,6 +9,7 @@ export default {
   name: 'app',
   data () {
     return {
+      msg: "test message"
     }
   }
 }

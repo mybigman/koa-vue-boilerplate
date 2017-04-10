@@ -13,3 +13,7 @@ node_modules
 # Dist folder
 dist/*.js
 dist/*.js.map
+
+# Script Dist folder
+public/js-dist/app.*.js
+public/js-dist/vendor.*.js
