@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon src/server/app.js --watch src/server",
     "dev-client": "cross-env NODE_ENV=development",
-    "build": "npm run build-client && npm run build-server",
+    "build": "npm run build-client",
     "build-client": "cross-env NODE_ENV=production webpack --config ./webpack.prod.client.js",
     "build-server": "cross-env NODE_ENV=production webpack --config ./webpack.prod.server.js",
-    "start": "cross-env NODE_ENV=production node ./dist/app.js"
+    "start": "cross-env NODE_ENV=production node ./src/server/app.js"
   },
   "dependencies": {
     "koa": "^2.2.0",
